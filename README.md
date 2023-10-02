@@ -6,7 +6,7 @@
     <br>
 </h1>
 <a href="https://roman-artemiev.github.io/ra-captcha/" >
-    <p align = "center">
+    <p align = "center" color="#fff">
         🤖 "Captcha: Test your humanity by solving a quick puzzle. Type the distorted characters or select the matching images to prove you're a real person. 🤖
     </p>
 </a>
