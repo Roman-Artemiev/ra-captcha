@@ -1,0 +1,272 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.body {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Comfortaa', cursive;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.checking {
+    padding: 12px 80px;
+
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: .4s ease-in-out;
+}
+
+.checking:hover {
+    color: #cbcbcb;
+    border: 2px solid #cbcbcb;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+    padding: 25px;
+
+    width: 450px;
+    height: 580px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.popup__top {
+    margin-bottom: 60px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.popup-title {
+    color: #000B6A;
+    font-size: 20px;
+
+    max-width: 274px;
+}
+
+.update-captcha-icon {
+    cursor: pointer;
+}
+
+
+.update-captcha-icon {
+    transition: .8s;
+}
+
+.captcha-pic {
+    margin-bottom: 15px;
+
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+
+    border-radius: 2px;
+    border: 1px solid #000;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.required-fragment {
+    fill: #ffffff00;
+    stroke: #00ff26;
+    stroke-width: 3px;
+
+    z-index: 2;
+}
+
+.empty-fragment {
+    fill: rgba(0, 0, 0, 0.6);
+    stroke: #ff0000;
+    stroke-width: 3px;
+}
+
+.fragment {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+
+    transform: translate(0, -50%);
+}
+
+.popup__slider {
+    padding: 0 5px;
+    margin-bottom: 30px;
+    appearance: none;
+
+    width: 100%;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 1px solid #000B6A;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.popup__slider::-webkit-slider-thumb {
+    appearance: none;
+
+    width: 60px;
+    height: 40px;
+
+    background-color: #242424;
+    border-radius: 5px;
+
+    background-image: url(../img/Svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.popup-check-btn {
+    padding: 10px 40px;
+
+    color: #fff;
+
+    background-color: #000B6A;
+    border-radius: 5px;
+}
+
+
+.result-popup {
+    width: 500px;
+    height: 220px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.result-response {
+    margin-bottom: 20px;
+
+    color: #000B6A;
+    font-size: 30px;
+}
+
+.accuracy {
+    margin-bottom: 50px;
+
+    color: #6e6e6e;
+    font-size: 16px;
+}
+
+
+.captcha-failure {
+    color: #ff0000;
+}
+
+.captcha-success {
+    color: #00c638;
+}
+
+.result-nav {
+    display: flex;
+    column-gap: 10px;
+}
+
+.home-btn {
+    background-color: #ff0000;
+}
+
+.check-again-btn {
+    background-color: #00be20;
+}
+
+.result-nav__btn {
+    width: 150px;
+    height: 40px;
+
+    color: #fff;
+    font-size: 15px;
+
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .popup {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .popup {
+        width: 100%;
+        height: 100vh;
+
+        border-radius: 0;
+    }
+}
